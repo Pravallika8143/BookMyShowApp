@@ -12,7 +12,7 @@ function Signup() {
        })
      return (
        <div>
-           <h1>Customer Signup</h1>
+           <h1>User Signup</h1>
            <form onSubmit={signupForm.handleSubmit}>
                <input type='text' {...signupForm.getFieldProps('username')}/><br/>
                <input type='text' {...signupForm.getFieldProps('password')}/><br/>
