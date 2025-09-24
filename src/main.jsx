@@ -9,6 +9,7 @@ import {
 import TheatreSignup from './assets/features/theatres/theatresignup.jsx';
 import ProducerSignup from './assets/features/movies/producersignup.jsx';
 import Signup from './assets/features/customer/Signup.jsx';
+import Login from './assets/features/customer/Login.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "/producerSignup",
     element:<ProducerSignup></ProducerSignup>,
   },
+  {
+    path: "/userLogin",
+    element:<Login></Login>,
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
