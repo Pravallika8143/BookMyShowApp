@@ -11,7 +11,7 @@ function TheatreSignup() {
         }
     })
   return (
-    <div>
+    <div style={{ maxWidth: 350,margin: "2rem auto", padding:24, border:"1px solid #9b9898ff",borderRadius: 8}}>
         <h2 className='mb-4'>Theatre Signup</h2>
         <form onSubmit={theatreForm.handleSubmit}>
         <label className='mb-1 '>Username:</label><br/>
