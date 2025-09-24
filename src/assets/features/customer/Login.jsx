@@ -20,7 +20,7 @@ function Login() {
                 <input type='text' {...loginForm.getFieldProps('password')} placeholder='Enter password'/><br/><br/>
             <label className='mb-1 '>Mobile Number:</label><br/>
                 <input type='text' {...loginForm.getFieldProps('mobile')} placeholder='Mobile Number'/><br/><br/>
-            <button className='ms-5'>Submit</button>
+            <button className='btn btn-primary'>Submit</button>
             </form>
         </div>
       )
