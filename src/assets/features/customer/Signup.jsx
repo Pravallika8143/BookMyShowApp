@@ -11,7 +11,7 @@ function Signup() {
            }
        })
      return (
-       <div>
+       <div style={{ maxWidth: 400,margin: "2rem auto", padding:24, border:"1px solid #9b9898ff",borderRadius: 8}}>
            <h2 className='mb-4'>User Signup</h2>
            <form onSubmit={signupForm.handleSubmit}>
             <label className='mb-1 '>Username:</label><br/>
