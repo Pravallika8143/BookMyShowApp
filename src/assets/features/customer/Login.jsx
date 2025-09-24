@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import React from 'react';
 
 function Login() {
-    var producerForm = useFormik({
+    var loginForm = useFormik({
             initialValues:{
               username:"",
               password:"",
@@ -12,12 +12,15 @@ function Login() {
         })
       return (
         <div>
-            <h1>User Login</h1>
-            <form onSubmit={producerForm.handleSubmit}>
-                <input type='text' {...producerForm.getFieldProps('username')}/><br/>
-                <input type='text' {...producerForm.getFieldProps('password')}/><br/>
-                <input type='text' {...producerForm.getFieldProps('mobile')}/><br/>
-                <button>Submit</button>
+            <h2 className='mb-4'>User Login</h2>
+            <form onSubmit={loginForm.handleSubmit}>
+            <label className='mb-1 '>Username:</label><br/>
+                <input type='text' {...loginForm.getFieldProps('username')} placeholder='Enter your name'/><br/><br/>
+            <label className='mb-1 '>Password:</label><br/>
+                <input type='text' {...loginForm.getFieldProps('password')} placeholder='Enter password'/><br/><br/>
+            <label className='mb-1 '>Mobile Number:</label><br/>
+                <input type='text' {...loginForm.getFieldProps('mobile')} placeholder='Mobile Number'/><br/><br/>
+            <button className='ms-5'>Submit</button>
             </form>
         </div>
       )
