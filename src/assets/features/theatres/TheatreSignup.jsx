@@ -11,15 +11,7 @@ function TheatreSignup() {
         }
     })
   return (
-    <div>
-        <h1>Theatre-Signup</h1>
-        <form onSubmit={theatreForm.handleSubmit}>
-            <input type='text' {...theatreForm.getFieldProps('username')}/><br/>
-            <input type='text' {...theatreForm.getFieldProps('password')}/><br/>
-            <input type='text' {...theatreForm.getFieldProps('mobile')}/><br/>
-            <button>SignUp</button>
-        </form>
-    </div>
+    
   )
 }
 
