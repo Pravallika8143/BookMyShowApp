@@ -12,7 +12,7 @@ function Login() {
         })
       return (
         <div>
-            <h1>Customer Login</h1>
+            <h1>User Login</h1>
             <form onSubmit={producerForm.handleSubmit}>
                 <input type='text' {...producerForm.getFieldProps('username')}/><br/>
                 <input type='text' {...producerForm.getFieldProps('password')}/><br/>
