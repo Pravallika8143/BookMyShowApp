@@ -1,5 +1,5 @@
-import { useFormik } from 'formik'
-import React from 'react'
+import { useFormik } from 'formik';
+import React from 'react';
 
 function TheatreSignup() {
     var theatreForm = useFormik({
