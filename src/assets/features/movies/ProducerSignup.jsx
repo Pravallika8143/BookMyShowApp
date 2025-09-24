@@ -1,5 +1,5 @@
-import { useFormik } from 'formik'
-import React from 'react'
+import { useFormik } from 'formik';
+import React from 'react';
 
 function ProducerSignup() {
     var producerForm = useFormik({
